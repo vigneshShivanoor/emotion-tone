@@ -1,4 +1,4 @@
-# description_generator.py
+
 
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from PIL import Image

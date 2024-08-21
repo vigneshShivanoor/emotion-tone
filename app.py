@@ -1,8 +1,12 @@
-# app.py
 
 from flask import Flask, request, render_template
 from description_generator import generate_image_description
 from emotion_analyzer import analyze_emotion
+import streamlit as st
+
+st.title("Emotion Tone App")
+st.write("This is a sample Streamlit app.")
+
 
 app = Flask(__name__)
 
