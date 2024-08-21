@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artwork Description & Emotion Classifier</title>
+  </head>
+  <body>
+    <h1>Artwork Description & Emotion Classifier</h1>
+    <form method="POST">
+      <label for="image_url">Enter Image URL:</label>
+      <input type="text" name="image_url" id="image_url" required />
+      <button type="submit">Analyze</button>
+    </form>
+
+    {% if description %}
+    <h2>Image Description</h2>
+    <p>{{ description }}</p>
+    <h2>Emotion Tone</h2>
+    <p>{{ emotion }}</p>
+    {% endif %}
+  </body>
+</html>
